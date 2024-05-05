@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    height: 100vh;
+    position: relative;
+    overflow: hidden; /* Ensures the pseudo-element does not extend beyond the body */
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url('../images/car.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    filter: brightness(0.4); /* Apply the brightness filter */
+    z-index: -1;
+    padding-top: 50px;
+}
+.card-body .form-control {
+    max-width: 100%; 
+    box-sizing: border-box; 
+}
+
+.form-top-spacing {
+    padding-top: 100px; 
+}
+
+
+.navbar-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+  }
+
+.hero-section {
+    display: flex;          
+    align-items: center;    
+    justify-content: center;
+    text-align: center;     
+    height: 100vh;          
+    color: white;           
+}
+
+.hero-header {
+    font-size: 48px;
+}
+
+.hero-text {
+    color: #ccc;
+}
+@media (min-width: 768px) {
+    .navbar-brand {
+        margin-left: 20px; 
+    }
+}
+
+.service {
+  color: #ccc;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+*,*:before,*::after{ 
+    padding: 0; 
+    margin: 0; 
+    box-sizing: inherit; 
+    /* border: 1px solid red; */
+  }
+
+
